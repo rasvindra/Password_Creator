@@ -23,11 +23,15 @@ var numValue = prompt("Would you like to include Numbers In your password? Pleas
 if (numValue !== "Y" && numValue !== "N")
 alert("Sorry not a Valid option. Please enter Y or N for your choice")
 
-var passLength = parseInt( prompt(
+var passwordLength = parseInt( prompt(
     "How many charaters would you like your password to be? Minimum length is 8 characters and no maximum length can be 128 characters"
   ));
-if (passLength < 8 || passlength > 128)
+if (passwordLength < 8 || passwordlength > 128)
   alert("Sorry Not a valid choice! Please select a number between 8 and 128");
 
 
+if (upperLetter !=="Y" && lowerLetter !=="Y" && specialChar !=="Y" && numValue !=="Y") {
+alert("You decided to have no values for your password. Please enter at least one value to create your password")
+
+}
 }
