@@ -26,7 +26,7 @@ alert("Sorry not a Valid option. Please enter Y or N for your choice")
 var passwordLength = parseInt( prompt(
     "How many charaters would you like your password to be? Minimum length is 8 characters and maximum length can be 128 characters"
   ));
-if (passwordLength < 8 || passwordlength > 128)
+if (passwordLength < 8 || passwordLength > 128)
   alert("Sorry Not a valid choice! Please select a number between 8 and 128");
 
 
@@ -48,8 +48,16 @@ else {
             result = result.concat(numChar)
         }
 
-        // function nameoffunctionIwillusetocreatethepassword (passwordLength, Result) 
+        begintheProcess (passwordLength, result) 
     }
 }
+ function begintheProcess (passwordLength, result){
+    var newPassword = ""
+    for(var i=0; i < passwordLength;i++){
+        newPassword=newPassword+result[Math.floor(math.random()* passwordLength)]
+    }
+    var displayPassword = document.querySelector("#password")
+    displayPassword.value = newPassword
+ }
 
 document.querySelector("#createpassword").addEventListener("click",UserInput)
