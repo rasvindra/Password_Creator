@@ -48,13 +48,23 @@ else {
             result = result.concat(numChar)
         }
 
-        begintheProcess (passwordLength, result) 
+        begintheProcess(passwordLength, result) 
+        console.log(result, "test 111111111111111111111")
+        console.log(numChar,"test 33333333333333333333")
+        console.log(specialLetterChar, "test 444444444444444444")
     }
 }
- function begintheProcess (passwordLength, result){
+
+
+ function begintheProcess(passwordLength, result){
     var newPassword = ""
-    for(var i=0; i < passwordLength;i++){
-        newPassword=newPassword+result[Math.floor(math.random()* passwordLength)]
+    for(var i=0; i < passwordLength; i++){
+
+
+        newPassword=newPassword+result[Math.floor(Math.random()* result.length)]
+        
+        console.log(newPassword) //test 222222
+        console.log(result, 'test555555555555555555')
     }
     var displayPassword = document.querySelector("#password")
     displayPassword.value = newPassword
