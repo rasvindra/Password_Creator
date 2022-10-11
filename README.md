@@ -36,6 +36,6 @@ rasvindra@hotmail.com <br/>
 ## License
 MIT
 
-https://github.com/rasvindra/Password_Creator
+https://rasvindra.github.io/Password_Creator/
 
 ![](assets/images/Password_screenshot.PNG)
