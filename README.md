@@ -17,7 +17,7 @@
 A simple app that displays knowledge of iteration through arrays to create an unsecure password based on user inputs
 
 ## Install
-Nothing needed to install. Just need a webrowser and internet connection
+Nothing needed to install. Just need a web browser and internet connection
 
 ## Contribution
 NaN
@@ -38,4 +38,4 @@ MIT
 
 https://github.com/rasvindra/Password_Creator
 
-![](assets/images/Password_screenshot.PNG.PNG)
+![](assets/images/Password_screenshot.PNG)
