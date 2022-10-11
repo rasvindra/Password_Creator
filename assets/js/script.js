@@ -7,27 +7,33 @@ var specialLetterChar =["~","`","!","@","#","$","%","^","&","*","(",")","_","+",
 
 
 function UserInput() {
+    while(upper !== "Y" && upper !== "N") {
 var upper = prompt("Would you like to include Upper Case Letters In your password? Please enter Y for yes or N or no.")
 if (upper !== "Y" && upper !== "N")
 alert("Sorry not a Valid option. Please enter Y or N for your choice")
-    
+    }
+    while(lower !== "Y" && lower !== "N") {
 var lower = prompt("Would you like to include Lower Case Letters In your password? Please enter Y for yes or N or no.")
 if (lower !== "Y" && lower !== "N")
 alert("Sorry not a Valid option. Please enter Y or N for your choice")
-
+    }
+    while(special !== "Y" && special !== "N") {
 var special = prompt("Would you like to include Special Characters In your password? Please enter Y for yes or N or no.")
 if (special !== "Y" && special !== "N")
 alert("Sorry not a Valid option. Please enter Y or N for your choice")
-
+    }
+    while(number !== "Y" && number !== "N") {
 var number = prompt("Would you like to include Numbers In your password? Please enter Y for yes or N or no.")
 if (number !== "Y" && number !== "N")
 alert("Sorry not a Valid option. Please enter Y or N for your choice")
-
+    }
+    
 var passwordLength = parseInt( prompt(
     "How many charaters would you like your password to be? Minimum length is 8 characters and maximum length can be 128 characters"
   ));
 if (passwordLength < 8 || passwordLength > 128)
   alert("Sorry Not a valid choice! Please select a number between 8 and 128");
+  
 
 
 if (upper !=="Y" && lower !=="Y" && special !=="Y" && number !=="Y") {
@@ -70,4 +76,4 @@ else {
     displayPassword.value = newPassword
  }
 
-document.querySelector("#createpassword").addEventListener("click",UserInput)
+document.querySelector("#generate").addEventListener("click",UserInput)

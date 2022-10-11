@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylsheet" href="./assets/css/style.css" />
-    <title>Document</title>
+    <link rel="stylsheet" href="./assets/css/style.css"/>
+    <title>Simple Unsecured Password Creator</title>
 </head>
 <body>
-    <section class="outside">
+    <section class="wrapper">
         <header>
             <h1>Unsecured Password Creator</h1>
         </header>
         <section class="card">
+            <div class="card-header">
             <h2>Your password will be in the window below. Please Copy-and-Paste as needed</h2>
-            <section class="card_main">
+            </div>
+            <section class="card-body">
                 <textarea
                 readonly
                 id="password"
                 placeholder="Your Unsecured Password"
-                aria-label="created_password">
+                aria-label="Generated_password">
                 </textarea>
 
             </section>
 
         </section>
-        <footer class="card_butt">
-            <button id="createpassword" class="button">Click here to set the Parameters for your Password</button>
+        <footer class="card-footer">
+            <button id="generate" class="btn">Click here to set the Parameters for your Password</button>
         </footer>
 
 
