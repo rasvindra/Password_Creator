@@ -33,6 +33,13 @@ var passwordLength = parseInt( prompt(
   ));
 if (passwordLength < 8 || passwordLength > 128) {
   alert("Sorry Not a valid choice! Please select a number between 8 and 128");
+  return
+}
+console.log(passwordLength, typeof passwordLength)
+
+if (Number.isNaN(passwordLength)) {
+    alert("Sorry Not a valid choice! Please select a number between 8 and 128");
+    return
 }
 // Commented out this validation check after adding while loops
 // if (upper !=="Y" && lower !=="Y" && special !=="Y" && number !=="Y") {
